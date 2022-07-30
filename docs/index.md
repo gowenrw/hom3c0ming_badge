@@ -35,6 +35,6 @@ I hope that everyone who gets one of these badge kits enjoys it.  It was made wi
 
 Assembly Instructions for the Corsage can be found here: [Corsage](corsage-assembly.md)
 
-Assembly Instructions for the Boutonniere can be found here: [Boutonniere](Boutonniere-assembly.md)
+Assembly Instructions for the Boutonniere can be found here: [Boutonniere](boutonniere-assembly.md)
 
 More badge details to be added soon.
