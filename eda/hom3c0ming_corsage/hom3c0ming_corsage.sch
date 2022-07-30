@@ -1,0 +1,921 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "hom3c0ming_corsage badge"
+Date "2022-06-23"
+Rev "4"
+Comp "Created by @alt_bier a.k.a. Richard Gowen"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 0_Raspberry_Pi:RPi_Pico_Back IC1
+U 1 1 629E5900
+P 5200 1900
+F 0 "IC1" H 5200 3115 50  0000 C CNN
+F 1 "RPi_Pico_Back" H 5200 3024 50  0000 C CNN
+F 2 "0_Raspberry_Pi:RPi_Pico_THT_Back_headers" V 5200 1900 50  0001 C CNN
+F 3 "" H 5200 1900 50  0001 C CNN
+	1    5200 1900
+	1    0    0    -1  
+$EndComp
+Text GLabel 6000 2850 2    50   Input ~ 0
+GP16
+$Comp
+L 0_local:LED_WS2812D_RPIN_THT_5mm D501
+U 1 1 62A42D96
+P 2750 6000
+F 0 "D501" H 2500 6300 50  0000 L CNN
+F 1 "WS2812D_RPIN_5mm" H 2800 5750 50  0000 L CNN
+F 2 "0_local:LED_D5.0mm-4_WS2812D_RPIN_backsilk" H 2800 5700 50  0001 L TNN
+F 3 "" H 2850 5625 50  0001 L TNN
+	1    2750 6000
+	1    0    0    -1  
+$EndComp
+Text GLabel 4400 2750 0    50   Input ~ 0
+GP14
+Text GLabel 4400 2450 0    50   Input ~ 0
+GP12
+Text GLabel 4400 1950 0    50   Input ~ 0
+GP08
+Text GLabel 4400 2250 0    50   Input ~ 0
+GP10
+Text Notes 6280 2930 0    50   ~ 0
+D4b\npwm0a
+Text Notes 4130 1330 2    50   ~ 0
+D1a\npwm1a
+Text Notes 4130 1530 2    50   ~ 0
+D1b\npwm2a
+Text Notes 4120 1830 2    50   ~ 0
+D2a\npwm3a
+Text Notes 4110 2030 2    50   ~ 0
+D2b\npwm4a
+Text Notes 4110 2330 2    50   ~ 0
+D3a\npwm5a
+Text Notes 4110 2530 2    50   ~ 0
+D3b\npwm6a
+Text Notes 4110 2830 2    50   ~ 0
+D4a\npwm7a
+Text GLabel 4400 1750 0    50   Input ~ 0
+GP06
+Text GLabel 4400 1450 0    50   Input ~ 0
+GP04
+Text GLabel 4400 1250 0    50   Input ~ 0
+GP02
+Text GLabel 6000 2550 2    50   Input ~ 0
+GP18
+Text GLabel 6000 2350 2    50   Input ~ 0
+GP20
+$Comp
+L 0_local:C_Disc_D3 C501
+U 1 1 62A0EB9C
+P 3000 5150
+F 0 "C501" H 3200 5200 50  0000 C CNN
+F 1 "100n" H 3200 5100 50  0000 C CNN
+F 2 "0_local:C_Disc_D3.0mm_W2.0mm_P2.50mm_backsilk" V 3188 5100 50  0001 C CNN
+F 3 "~" H 3000 5150 50  0001 C CNN
+	1    3000 5150
+	1    0    0    -1  
+$EndComp
+Text GLabel 1950 4200 0    50   Input ~ 0
+GP04
+Text GLabel 1950 3800 0    50   Input ~ 0
+GP02
+$Comp
+L 0_local:2xAAA_Battery_Pack BT1
+U 1 1 62A12ED0
+P 2050 2200
+F 0 "BT1" H 2150 2250 50  0000 L CNN
+F 1 "2xAAA_3V" H 2150 2150 50  0000 L CNN
+F 2 "0_local:BatteryHolder_2468_2xAAA__1hole_back" V 1915 2235 50  0001 C CNN
+F 3 "~" V 2050 2260 50  0001 C CNN
+	1    2050 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L 0_local:SW_SPDT_SS12D00G SW1
+U 1 1 62A139D1
+P 2450 1200
+F 0 "SW1" H 2450 1500 50  0000 C CNN
+F 1 "SW_SPDT_SS12D00G" H 2450 1400 50  0000 C CNN
+F 2 "0_local:SW_SPDT_Slide_SS12D00G-1P2T_3pin_back" H 2450 900 50  0001 C CNN
+F 3 "" H 2450 1200 50  0001 C CNN
+	1    2450 1200
+	1    0    0    -1  
+$EndComp
+Text Notes 6280 2590 0    50   ~ 0
+D5xx\nstrip
+Text Notes 6280 2380 0    50   ~ 0
+D6xx\nstrip
+$Comp
+L 0_local:1xAAA_Battery_Pack BT2
+U 1 1 62A1AF6E
+P 2050 2700
+F 0 "BT2" H 2150 2800 50  0000 L CNN
+F 1 "1xAAA_1.5V" H 2150 2700 50  0000 L CNN
+F 2 "0_local:BatteryHolder_2466_1xAAA_back" V 1900 2760 50  0001 C CNN
+F 3 "~" V 2050 2760 50  0001 C CNN
+	1    2050 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 62A363C7
+P 6650 1150
+F 0 "#PWR?" H 6650 900 50  0001 C CNN
+F 1 "GND" H 6655 977 50  0000 C CNN
+F 2 "" H 6650 1150 50  0001 C CNN
+F 3 "" H 6650 1150 50  0001 C CNN
+	1    6650 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 62A60A57
+P 6650 1650
+F 0 "#PWR?" H 6650 1400 50  0001 C CNN
+F 1 "GND" H 6655 1477 50  0000 C CNN
+F 2 "" H 6650 1650 50  0001 C CNN
+F 3 "" H 6650 1650 50  0001 C CNN
+	1    6650 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 62A64949
+P 6650 2150
+F 0 "#PWR?" H 6650 1900 50  0001 C CNN
+F 1 "GND" H 6655 1977 50  0000 C CNN
+F 2 "" H 6650 2150 50  0001 C CNN
+F 3 "" H 6650 2150 50  0001 C CNN
+	1    6650 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 62A6CDFD
+P 6650 2650
+F 0 "#PWR?" H 6650 2400 50  0001 C CNN
+F 1 "GND" H 6655 2477 50  0000 C CNN
+F 2 "" H 6650 2650 50  0001 C CNN
+F 3 "" H 6650 2650 50  0001 C CNN
+	1    6650 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 62A74737
+P 3750 1150
+F 0 "#PWR?" H 3750 900 50  0001 C CNN
+F 1 "GND" H 3755 977 50  0000 C CNN
+F 2 "" H 3750 1150 50  0001 C CNN
+F 3 "" H 3750 1150 50  0001 C CNN
+	1    3750 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 62A906F8
+P 3750 1650
+F 0 "#PWR?" H 3750 1400 50  0001 C CNN
+F 1 "GND" H 3755 1477 50  0000 C CNN
+F 2 "" H 3750 1650 50  0001 C CNN
+F 3 "" H 3750 1650 50  0001 C CNN
+	1    3750 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 62A98C90
+P 3750 2150
+F 0 "#PWR?" H 3750 1900 50  0001 C CNN
+F 1 "GND" H 3755 1977 50  0000 C CNN
+F 2 "" H 3750 2150 50  0001 C CNN
+F 3 "" H 3750 2150 50  0001 C CNN
+	1    3750 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 62AA0E4C
+P 3750 2650
+F 0 "#PWR?" H 3750 2400 50  0001 C CNN
+F 1 "GND" H 3755 2477 50  0000 C CNN
+F 2 "" H 3750 2650 50  0001 C CNN
+F 3 "" H 3750 2650 50  0001 C CNN
+	1    3750 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 2350 6000 2350
+Wire Wire Line
+	5900 2550 6000 2550
+Wire Wire Line
+	5900 2850 6000 2850
+Wire Wire Line
+	5900 2150 6650 2150
+Wire Wire Line
+	5900 2650 6650 2650
+Wire Wire Line
+	5900 1650 6650 1650
+Wire Wire Line
+	5900 1150 6650 1150
+$Comp
+L power:GND #PWR?
+U 1 1 62B2F42B
+P 5200 3150
+F 0 "#PWR?" H 5200 2900 50  0001 C CNN
+F 1 "GND" H 5205 2977 50  0000 C CNN
+F 2 "" H 5200 3150 50  0001 C CNN
+F 3 "" H 5200 3150 50  0001 C CNN
+	1    5200 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 3050 5200 3150
+Wire Wire Line
+	4400 2750 4500 2750
+Wire Wire Line
+	4500 2450 4400 2450
+Wire Wire Line
+	4500 2250 4400 2250
+Wire Wire Line
+	4500 1950 4400 1950
+Wire Wire Line
+	4500 1750 4400 1750
+Wire Wire Line
+	4500 1450 4400 1450
+Wire Wire Line
+	4500 1250 4400 1250
+Wire Wire Line
+	3750 1150 4500 1150
+Wire Wire Line
+	3750 1650 4500 1650
+Wire Wire Line
+	3750 2150 4500 2150
+Wire Wire Line
+	3750 2650 4500 2650
+$Comp
+L 0_local:R_Axial R4
+U 1 1 62BBA759
+P 2200 4200
+F 0 "R4" V 2200 4200 50  0000 C CNN
+F 1 "470" V 2300 4200 50  0000 C CNN
+F 2 "0_local:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_backsilk" V 2130 4200 50  0001 C CNN
+F 3 "~" H 2200 4200 50  0001 C CNN
+	1    2200 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L 0_local:LED_Two_Color_CC_THT_3mm D1
+U 1 1 62BD5439
+P 2650 4000
+F 0 "D1" H 2600 4517 50  0000 C CNN
+F 1 "LED_Two_Color_CC_3mm" H 2600 4426 50  0000 C CNN
+F 2 "0_local:LED_D3.0mm-3-TwoColor_backsilk" H 2700 3500 50  0001 C CNN
+F 3 "~" H 2585 4005 50  0001 C CNN
+	1    2650 4000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L 0_local:R_Axial R2
+U 1 1 62BE8503
+P 2200 3800
+F 0 "R2" V 2200 3800 50  0000 C CNN
+F 1 "470" V 2300 3800 50  0000 C CNN
+F 2 "0_local:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_backsilk" V 2130 3800 50  0001 C CNN
+F 3 "~" H 2200 3800 50  0001 C CNN
+	1    2200 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 62BF42CB
+P 3150 4100
+F 0 "#PWR?" H 3150 3850 50  0001 C CNN
+F 1 "GND" H 3155 3927 50  0000 C CNN
+F 2 "" H 3150 4100 50  0001 C CNN
+F 3 "" H 3150 4100 50  0001 C CNN
+	1    3150 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 3800 2050 3800
+Wire Wire Line
+	2350 3800 2450 3800
+Wire Wire Line
+	2350 4200 2450 4200
+Wire Wire Line
+	1950 4200 2050 4200
+Text GLabel 3800 4200 0    50   Input ~ 0
+GP08
+Text GLabel 3800 3800 0    50   Input ~ 0
+GP06
+$Comp
+L 0_local:R_Axial R8
+U 1 1 62C1B7F1
+P 4050 4200
+F 0 "R8" V 4050 4200 50  0000 C CNN
+F 1 "470" V 4150 4200 50  0000 C CNN
+F 2 "0_local:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_backsilk" V 3980 4200 50  0001 C CNN
+F 3 "~" H 4050 4200 50  0001 C CNN
+	1    4050 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L 0_local:LED_Two_Color_CC_THT_3mm D2
+U 1 1 62C1B7F7
+P 4500 4000
+F 0 "D2" H 4450 4517 50  0000 C CNN
+F 1 "LED_Two_Color_CC_3mm" H 4450 4426 50  0000 C CNN
+F 2 "0_local:LED_D3.0mm-3-TwoColor_backsilk" H 4550 3500 50  0001 C CNN
+F 3 "~" H 4435 4005 50  0001 C CNN
+	1    4500 4000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L 0_local:R_Axial R6
+U 1 1 62C1B7FD
+P 4050 3800
+F 0 "R6" V 4050 3800 50  0000 C CNN
+F 1 "470" V 4150 3800 50  0000 C CNN
+F 2 "0_local:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_backsilk" V 3980 3800 50  0001 C CNN
+F 3 "~" H 4050 3800 50  0001 C CNN
+	1    4050 3800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3800 3800 3900 3800
+Wire Wire Line
+	4200 3800 4300 3800
+Wire Wire Line
+	4200 4200 4300 4200
+Wire Wire Line
+	3800 4200 3900 4200
+Text GLabel 5650 4200 0    50   Input ~ 0
+GP12
+Text GLabel 5650 3800 0    50   Input ~ 0
+GP10
+$Comp
+L 0_local:R_Axial R12
+U 1 1 62C2F63C
+P 5900 4200
+F 0 "R12" V 5900 4200 50  0000 C CNN
+F 1 "470" V 6000 4200 50  0000 C CNN
+F 2 "0_local:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_backsilk" V 5830 4200 50  0001 C CNN
+F 3 "~" H 5900 4200 50  0001 C CNN
+	1    5900 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L 0_local:LED_Two_Color_CC_THT_3mm D3
+U 1 1 62C2F642
+P 6350 4000
+F 0 "D3" H 6300 4517 50  0000 C CNN
+F 1 "LED_Two_Color_CC_3mm" H 6300 4426 50  0000 C CNN
+F 2 "0_local:LED_D3.0mm-3-TwoColor_backsilk" H 6400 3500 50  0001 C CNN
+F 3 "~" H 6285 4005 50  0001 C CNN
+	1    6350 4000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L 0_local:R_Axial R10
+U 1 1 62C2F648
+P 5900 3800
+F 0 "R10" V 5900 3800 50  0000 C CNN
+F 1 "470" V 6000 3800 50  0000 C CNN
+F 2 "0_local:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_backsilk" V 5830 3800 50  0001 C CNN
+F 3 "~" H 5900 3800 50  0001 C CNN
+	1    5900 3800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5650 3800 5750 3800
+Wire Wire Line
+	6050 3800 6150 3800
+Wire Wire Line
+	6050 4200 6150 4200
+Wire Wire Line
+	5650 4200 5750 4200
+Text GLabel 7500 4200 0    50   Input ~ 0
+GP16
+Text GLabel 7500 3800 0    50   Input ~ 0
+GP14
+$Comp
+L 0_local:R_Axial R16
+U 1 1 62C4EB70
+P 7750 4200
+F 0 "R16" V 7750 4200 50  0000 C CNN
+F 1 "470" V 7850 4200 50  0000 C CNN
+F 2 "0_local:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_backsilk" V 7680 4200 50  0001 C CNN
+F 3 "~" H 7750 4200 50  0001 C CNN
+	1    7750 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L 0_local:LED_Two_Color_CC_THT_3mm D4
+U 1 1 62C4EB76
+P 8200 4000
+F 0 "D4" H 8150 4517 50  0000 C CNN
+F 1 "LED_Two_Color_CC_3mm" H 8150 4426 50  0000 C CNN
+F 2 "0_local:LED_D3.0mm-3-TwoColor_backsilk" H 8250 3500 50  0001 C CNN
+F 3 "~" H 8135 4005 50  0001 C CNN
+	1    8200 4000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L 0_local:R_Axial R14
+U 1 1 62C4EB7C
+P 7750 3800
+F 0 "R14" V 7750 3800 50  0000 C CNN
+F 1 "470" V 7850 3800 50  0000 C CNN
+F 2 "0_local:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_backsilk" V 7680 3800 50  0001 C CNN
+F 3 "~" H 7750 3800 50  0001 C CNN
+	1    7750 3800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7500 3800 7600 3800
+Wire Wire Line
+	7900 3800 8000 3800
+Wire Wire Line
+	7900 4200 8000 4200
+Wire Wire Line
+	7500 4200 7600 4200
+$Comp
+L power:VBUS #PWR?
+U 1 1 62C7C98D
+P 6150 850
+F 0 "#PWR?" H 6150 700 50  0001 C CNN
+F 1 "VBUS" H 6165 1023 50  0000 C CNN
+F 2 "" H 6150 850 50  0001 C CNN
+F 3 "" H 6150 850 50  0001 C CNN
+	1    6150 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+VSW #PWR?
+U 1 1 62C7FBAF
+P 6400 850
+F 0 "#PWR?" H 6400 700 50  0001 C CNN
+F 1 "+VSW" H 6415 1023 50  0000 C CNN
+F 2 "" H 6400 850 50  0001 C CNN
+F 3 "" H 6400 850 50  0001 C CNN
+	1    6400 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 950  6150 950 
+Wire Wire Line
+	6150 950  6150 850 
+Wire Wire Line
+	5900 1050 6400 1050
+Wire Wire Line
+	6400 1050 6400 850 
+Wire Wire Line
+	2950 4000 3150 4000
+Wire Wire Line
+	3150 4000 3150 4100
+$Comp
+L power:GND #PWR?
+U 1 1 62CCCA6C
+P 5000 4100
+F 0 "#PWR?" H 5000 3850 50  0001 C CNN
+F 1 "GND" H 5005 3927 50  0000 C CNN
+F 2 "" H 5000 4100 50  0001 C CNN
+F 3 "" H 5000 4100 50  0001 C CNN
+	1    5000 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 4000 5000 4000
+Wire Wire Line
+	5000 4000 5000 4100
+$Comp
+L power:GND #PWR?
+U 1 1 62CD044F
+P 6850 4100
+F 0 "#PWR?" H 6850 3850 50  0001 C CNN
+F 1 "GND" H 6855 3927 50  0000 C CNN
+F 2 "" H 6850 4100 50  0001 C CNN
+F 3 "" H 6850 4100 50  0001 C CNN
+	1    6850 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 4000 6850 4000
+Wire Wire Line
+	6850 4000 6850 4100
+$Comp
+L power:GND #PWR?
+U 1 1 62CD3D61
+P 8700 4100
+F 0 "#PWR?" H 8700 3850 50  0001 C CNN
+F 1 "GND" H 8705 3927 50  0000 C CNN
+F 2 "" H 8700 4100 50  0001 C CNN
+F 3 "" H 8700 4100 50  0001 C CNN
+	1    8700 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 4000 8700 4000
+Wire Wire Line
+	8700 4000 8700 4100
+Text Notes 2300 4150 0    50   ~ 0
+GREEN
+$Comp
+L power:GND #PWR?
+U 1 1 62D1A98A
+P 2750 6400
+F 0 "#PWR?" H 2750 6150 50  0001 C CNN
+F 1 "GND" H 2755 6227 50  0000 C CNN
+F 2 "" H 2750 6400 50  0001 C CNN
+F 3 "" H 2750 6400 50  0001 C CNN
+	1    2750 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 6300 2750 6400
+Text GLabel 1950 6000 0    50   Input ~ 0
+GP18
+$Comp
+L 0_local:R_Axial R181
+U 1 1 62D475F8
+P 2200 6000
+F 0 "R181" V 2200 6000 50  0000 C CNN
+F 1 "470" V 2300 6000 50  0000 C CNN
+F 2 "0_local:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_backsilk" V 2130 6000 50  0001 C CNN
+F 3 "~" H 2200 6000 50  0001 C CNN
+	1    2200 6000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2350 6000 2450 6000
+Wire Wire Line
+	1950 6000 2050 6000
+$Comp
+L power:GND #PWR?
+U 1 1 62D7729C
+P 3000 5400
+F 0 "#PWR?" H 3000 5150 50  0001 C CNN
+F 1 "GND" H 3005 5227 50  0000 C CNN
+F 2 "" H 3000 5400 50  0001 C CNN
+F 3 "" H 3000 5400 50  0001 C CNN
+	1    3000 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 5300 3000 5400
+$Comp
+L power:+VSW #PWR?
+U 1 1 62D7F876
+P 2750 4900
+F 0 "#PWR?" H 2750 4750 50  0001 C CNN
+F 1 "+VSW" H 2765 5073 50  0000 C CNN
+F 2 "" H 2750 4900 50  0001 C CNN
+F 3 "" H 2750 4900 50  0001 C CNN
+	1    2750 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 5700 2750 5000
+Wire Wire Line
+	3000 5000 2750 5000
+Connection ~ 2750 5000
+Wire Wire Line
+	2750 5000 2750 4900
+$Comp
+L 0_local:LED_WS2812D_RPIN_THT_5mm D502
+U 1 1 62DCE3CA
+P 4600 6000
+F 0 "D502" H 4350 6300 50  0000 L CNN
+F 1 "WS2812D_RPIN_5mm" H 4650 5750 50  0000 L CNN
+F 2 "0_local:LED_D5.0mm-4_WS2812D_RPIN_backsilk" H 4650 5700 50  0001 L TNN
+F 3 "" H 4700 5625 50  0001 L TNN
+	1    4600 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 0_local:C_Disc_D3 C502
+U 1 1 62DCE3D0
+P 4850 5150
+F 0 "C502" H 5050 5200 50  0000 C CNN
+F 1 "100n" H 5050 5100 50  0000 C CNN
+F 2 "0_local:C_Disc_D3.0mm_W2.0mm_P2.50mm_backsilk" V 5038 5100 50  0001 C CNN
+F 3 "~" H 4850 5150 50  0001 C CNN
+	1    4850 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 62DCE3D6
+P 4600 6400
+F 0 "#PWR?" H 4600 6150 50  0001 C CNN
+F 1 "GND" H 4605 6227 50  0000 C CNN
+F 2 "" H 4600 6400 50  0001 C CNN
+F 3 "" H 4600 6400 50  0001 C CNN
+	1    4600 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 6300 4600 6400
+$Comp
+L 0_local:R_Axial R182
+U 1 1 62DCE3DE
+P 4050 6000
+F 0 "R182" V 4050 6000 50  0000 C CNN
+F 1 "470" V 4150 6000 50  0000 C CNN
+F 2 "0_local:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_backsilk" V 3980 6000 50  0001 C CNN
+F 3 "~" H 4050 6000 50  0001 C CNN
+	1    4050 6000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4200 6000 4300 6000
+$Comp
+L power:GND #PWR?
+U 1 1 62DCE3E6
+P 4850 5400
+F 0 "#PWR?" H 4850 5150 50  0001 C CNN
+F 1 "GND" H 4855 5227 50  0000 C CNN
+F 2 "" H 4850 5400 50  0001 C CNN
+F 3 "" H 4850 5400 50  0001 C CNN
+	1    4850 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 5300 4850 5400
+Wire Wire Line
+	4600 5700 4600 5000
+Wire Wire Line
+	4850 5000 4600 5000
+Wire Wire Line
+	3000 5000 4600 5000
+Connection ~ 3000 5000
+Connection ~ 4600 5000
+Wire Wire Line
+	3050 6000 3900 6000
+NoConn ~ 5000 6000
+Wire Wire Line
+	5000 6000 4900 6000
+$Comp
+L 0_local:LED_WS2812D_RPIN_THT_5mm D601
+U 1 1 62E4C22A
+P 6450 6000
+F 0 "D601" H 6200 6300 50  0000 L CNN
+F 1 "WS2812D_RPIN_5mm" H 6500 5750 50  0000 L CNN
+F 2 "0_local:LED_D5.0mm-4_WS2812D_RPIN_backsilk" H 6500 5700 50  0001 L TNN
+F 3 "" H 6550 5625 50  0001 L TNN
+	1    6450 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 0_local:C_Disc_D3 C601
+U 1 1 62E4C230
+P 6700 5150
+F 0 "C601" H 6900 5200 50  0000 C CNN
+F 1 "100n" H 6900 5100 50  0000 C CNN
+F 2 "0_local:C_Disc_D3.0mm_W2.0mm_P2.50mm_backsilk" V 6888 5100 50  0001 C CNN
+F 3 "~" H 6700 5150 50  0001 C CNN
+	1    6700 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 62E4C236
+P 6450 6400
+F 0 "#PWR?" H 6450 6150 50  0001 C CNN
+F 1 "GND" H 6455 6227 50  0000 C CNN
+F 2 "" H 6450 6400 50  0001 C CNN
+F 3 "" H 6450 6400 50  0001 C CNN
+	1    6450 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 6300 6450 6400
+Text GLabel 5650 6000 0    50   Input ~ 0
+GP20
+$Comp
+L 0_local:R_Axial R201
+U 1 1 62E4C23E
+P 5900 6000
+F 0 "R201" V 5900 6000 50  0000 C CNN
+F 1 "470" V 6000 6000 50  0000 C CNN
+F 2 "0_local:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_backsilk" V 5830 6000 50  0001 C CNN
+F 3 "~" H 5900 6000 50  0001 C CNN
+	1    5900 6000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6050 6000 6150 6000
+Wire Wire Line
+	5650 6000 5750 6000
+$Comp
+L power:GND #PWR?
+U 1 1 62E4C246
+P 6700 5400
+F 0 "#PWR?" H 6700 5150 50  0001 C CNN
+F 1 "GND" H 6705 5227 50  0000 C CNN
+F 2 "" H 6700 5400 50  0001 C CNN
+F 3 "" H 6700 5400 50  0001 C CNN
+	1    6700 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 5300 6700 5400
+Wire Wire Line
+	6450 5700 6450 5000
+Wire Wire Line
+	6700 5000 6450 5000
+$Comp
+L 0_local:LED_WS2812D_RPIN_THT_5mm D602
+U 1 1 62E4C251
+P 8300 6000
+F 0 "D602" H 8050 6300 50  0000 L CNN
+F 1 "WS2812D_RPIN_5mm" H 8350 5750 50  0000 L CNN
+F 2 "0_local:LED_D5.0mm-4_WS2812D_RPIN_backsilk" H 8350 5700 50  0001 L TNN
+F 3 "" H 8400 5625 50  0001 L TNN
+	1    8300 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 0_local:C_Disc_D3 C602
+U 1 1 62E4C257
+P 8550 5150
+F 0 "C602" H 8750 5200 50  0000 C CNN
+F 1 "100n" H 8750 5100 50  0000 C CNN
+F 2 "0_local:C_Disc_D3.0mm_W2.0mm_P2.50mm_backsilk" V 8738 5100 50  0001 C CNN
+F 3 "~" H 8550 5150 50  0001 C CNN
+	1    8550 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 62E4C25D
+P 8300 6400
+F 0 "#PWR?" H 8300 6150 50  0001 C CNN
+F 1 "GND" H 8305 6227 50  0000 C CNN
+F 2 "" H 8300 6400 50  0001 C CNN
+F 3 "" H 8300 6400 50  0001 C CNN
+	1    8300 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 6300 8300 6400
+$Comp
+L 0_local:R_Axial R202
+U 1 1 62E4C264
+P 7750 6000
+F 0 "R202" V 7750 6000 50  0000 C CNN
+F 1 "470" V 7850 6000 50  0000 C CNN
+F 2 "0_local:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_backsilk" V 7680 6000 50  0001 C CNN
+F 3 "~" H 7750 6000 50  0001 C CNN
+	1    7750 6000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7900 6000 8000 6000
+$Comp
+L power:GND #PWR?
+U 1 1 62E4C26B
+P 8550 5400
+F 0 "#PWR?" H 8550 5150 50  0001 C CNN
+F 1 "GND" H 8555 5227 50  0000 C CNN
+F 2 "" H 8550 5400 50  0001 C CNN
+F 3 "" H 8550 5400 50  0001 C CNN
+	1    8550 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 5300 8550 5400
+Wire Wire Line
+	8300 5700 8300 5000
+Wire Wire Line
+	8550 5000 8300 5000
+Wire Wire Line
+	6700 5000 8300 5000
+Connection ~ 6700 5000
+Connection ~ 8300 5000
+Wire Wire Line
+	6750 6000 7600 6000
+NoConn ~ 8700 6000
+Wire Wire Line
+	8700 6000 8600 6000
+Wire Wire Line
+	4850 5000 6450 5000
+Connection ~ 4850 5000
+Connection ~ 6450 5000
+$Comp
+L power:GND #PWR?
+U 1 1 62EB22C2
+P 2050 2900
+F 0 "#PWR?" H 2050 2650 50  0001 C CNN
+F 1 "GND" H 2055 2727 50  0000 C CNN
+F 2 "" H 2050 2900 50  0001 C CNN
+F 3 "" H 2050 2900 50  0001 C CNN
+	1    2050 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 2800 2050 2900
+Wire Wire Line
+	2050 2500 2050 2400
+$Comp
+L power:VBUS #PWR?
+U 1 1 62EBBBB9
+P 1650 850
+F 0 "#PWR?" H 1650 700 50  0001 C CNN
+F 1 "VBUS" H 1665 1023 50  0000 C CNN
+F 2 "" H 1650 850 50  0001 C CNN
+F 3 "" H 1650 850 50  0001 C CNN
+	1    1650 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+VSW #PWR?
+U 1 1 62EBBBBF
+P 2900 850
+F 0 "#PWR?" H 2900 700 50  0001 C CNN
+F 1 "+VSW" H 2915 1023 50  0000 C CNN
+F 2 "" H 2900 850 50  0001 C CNN
+F 3 "" H 2900 850 50  0001 C CNN
+	1    2900 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L 0_local:Q_CJ3415_MOSFET_SOT23 Q1
+U 1 1 62A3B59C
+P 1950 1600
+F 0 "Q1" H 1850 1800 50  0000 L CNN
+F 1 "MOSFET_SOT23" V 2200 1300 50  0000 L CNN
+F 2 "0_local:Q_CJ3415_SOT-23-handsolder-back" H 2150 1525 50  0001 L CIN
+F 3 "https://datasheet.lcsc.com/lcsc/2112021830_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--CJ3415_C2910186.pdf" H 1950 1600 50  0001 L CNN
+	1    1950 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 2000 2050 1800
+$Comp
+L 0_local:R_Axial R1
+U 1 1 62A40FF5
+P 1650 1850
+F 0 "R1" V 1650 1850 50  0000 C CNN
+F 1 "22K" V 1750 1850 50  0000 C CNN
+F 2 "0_local:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_backsilk" V 1580 1850 50  0001 C CNN
+F 3 "~" H 1650 1850 50  0001 C CNN
+	1    1650 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 62A48418
+P 1650 2100
+F 0 "#PWR?" H 1650 1850 50  0001 C CNN
+F 1 "GND" H 1655 1927 50  0000 C CNN
+F 2 "" H 1650 2100 50  0001 C CNN
+F 3 "" H 1650 2100 50  0001 C CNN
+	1    1650 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 2000 1650 2100
+Wire Wire Line
+	1750 1600 1650 1600
+Wire Wire Line
+	1650 1600 1650 1700
+Wire Wire Line
+	2050 1400 2050 1200
+Wire Wire Line
+	2050 1200 2250 1200
+Wire Wire Line
+	1650 850  1650 1600
+Connection ~ 1650 1600
+Wire Wire Line
+	2650 1100 2900 1100
+Wire Wire Line
+	2900 1100 2900 850 
+NoConn ~ 2700 1300
+Wire Wire Line
+	2650 1300 2700 1300
+Text Notes 2300 1700 0    50   ~ 0
+POWER\nPROTECTION
+Text Notes 2350 3750 0    50   ~ 0
+BLUE
+Text Notes 4200 3750 0    50   ~ 0
+BLUE
+Text Notes 6050 3750 0    50   ~ 0
+BLUE
+Text Notes 7900 3750 0    50   ~ 0
+BLUE
+Text Notes 4150 4150 0    50   ~ 0
+GREEN
+Text Notes 6000 4150 0    50   ~ 0
+GREEN
+Text Notes 7850 4150 0    50   ~ 0
+GREEN
+$EndSCHEMATC

@@ -1,0 +1,256 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "hom3c0ming_boutonniere badge"
+Date "2022-07-07"
+Rev "3"
+Comp "Created by @alt_bier a.k.a. Richard Gowen"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 0_local:LED_THT_3mm D2
+U 1 1 62C4E65B
+P 6800 4500
+F 0 "D2" H 6800 4700 50  0000 C CNN
+F 1 "LED_3mm" H 6800 4600 50  0000 C CNN
+F 2 "0_local:LED_D3.0mm-2" H 6800 4250 50  0001 C CNN
+F 3 "~" H 6800 4500 50  0001 C CNN
+	1    6800 4500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L 0_local:Battery_CR2032 BT1
+U 1 1 62C4F03E
+P 3950 3200
+F 0 "BT1" H 3832 3296 50  0000 R CNN
+F 1 "Battery_CR2032" H 3832 3205 50  0000 R CNN
+F 2 "0_local:BatteryHolder_CR2032-BS-2-1_Front_backsilk" V 3800 3310 50  0001 C CNN
+F 3 "~" V 3950 3260 50  0001 C CNN
+	1    3950 3200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L 0_local:R_RHE_5mm RV1
+U 1 1 62C50237
+P 5400 2400
+F 0 "RV1" V 5200 2400 50  0000 C CNN
+F 1 "0-10K" V 5291 2400 50  0000 C CNN
+F 2 "0_local:R_Potentiometer_3pin_THT_5mm_backsilk_anno" V 5830 2480 50  0001 C CNN
+F 3 "~" H 5400 2400 50  0001 C CNN
+	1    5400 2400
+	0    -1   1    0   
+$EndComp
+$Comp
+L 0_local:SW_SPDT_SS12D00G SW1
+U 1 1 62C54132
+P 4150 2700
+F 0 "SW1" H 4150 2985 50  0000 C CNN
+F 1 "SW_SPDT_SS12D00G" H 4150 2894 50  0000 C CNN
+F 2 "0_local:SW_SPDT_Slide_SS12D00G-1P2T_3pin_back" H 4150 2400 50  0001 C CNN
+F 3 "" H 4150 2700 50  0001 C CNN
+	1    4150 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L 0_local:R_Axial_L6.3 R1
+U 1 1 62C56347
+P 6100 2400
+F 0 "R1" V 6100 2400 50  0000 C CNN
+F 1 "47" V 6000 2400 50  0000 C CNN
+F 2 "0_local:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_backsilk" V 5950 2400 50  0001 C CNN
+F 3 "~" H 6020 2400 50  0001 C CNN
+	1    6100 2400
+	0    1    -1   0   
+$EndComp
+$Comp
+L 0_local:R_Axial_L6.3 R2
+U 1 1 62C5A523
+P 6100 3000
+F 0 "R2" V 6100 3000 50  0000 C CNN
+F 1 "47" V 6000 3000 50  0000 C CNN
+F 2 "0_local:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_backsilk" V 5950 3000 50  0001 C CNN
+F 3 "~" H 6020 3000 50  0001 C CNN
+	1    6100 3000
+	0    1    -1   0   
+$EndComp
+$Comp
+L 0_local:R_Axial_L6.3 R3
+U 1 1 62C5A900
+P 6100 3600
+F 0 "R3" V 6100 3600 50  0000 C CNN
+F 1 "47" V 6000 3600 50  0000 C CNN
+F 2 "0_local:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_backsilk" V 5950 3600 50  0001 C CNN
+F 3 "~" H 6020 3600 50  0001 C CNN
+	1    6100 3600
+	0    1    -1   0   
+$EndComp
+$Comp
+L 0_local:R_RHE_5mm RV2
+U 1 1 62C5FB2E
+P 5400 3000
+F 0 "RV2" V 5200 3000 50  0000 C CNN
+F 1 "0-10K" V 5291 3000 50  0000 C CNN
+F 2 "0_local:R_Potentiometer_3pin_THT_5mm_backsilk_anno" V 5830 3080 50  0001 C CNN
+F 3 "~" H 5400 3000 50  0001 C CNN
+	1    5400 3000
+	0    -1   1    0   
+$EndComp
+$Comp
+L 0_local:R_RHE_5mm RV3
+U 1 1 62C622FD
+P 5400 3600
+F 0 "RV3" V 5200 3600 50  0000 C CNN
+F 1 "0-10K" V 5291 3600 50  0000 C CNN
+F 2 "0_local:R_Potentiometer_3pin_THT_5mm_backsilk_anno" V 5830 3680 50  0001 C CNN
+F 3 "~" H 5400 3600 50  0001 C CNN
+	1    5400 3600
+	0    -1   1    0   
+$EndComp
+$Comp
+L 0_local:R_Axial_L6.3 R4
+U 1 1 62C65CF9
+P 6100 4500
+F 0 "R4" V 6100 4500 50  0000 C CNN
+F 1 "470" V 6000 4500 50  0000 C CNN
+F 2 "0_local:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal_backsilk" V 5950 4500 50  0001 C CNN
+F 3 "~" H 6020 4500 50  0001 C CNN
+	1    6100 4500
+	0    1    -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 62C69B28
+P 3950 3500
+F 0 "#PWR?" H 3950 3250 50  0001 C CNN
+F 1 "GND" H 3955 3327 50  0000 C CNN
+F 2 "" H 3950 3500 50  0001 C CNN
+F 3 "" H 3950 3500 50  0001 C CNN
+	1    3950 3500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 3000 3950 2700
+Wire Wire Line
+	4350 2600 4800 2600
+Wire Wire Line
+	4800 2600 4800 3200
+Wire Wire Line
+	4800 3200 5400 3200
+Connection ~ 4800 2600
+Wire Wire Line
+	4800 2600 5400 2600
+Wire Wire Line
+	4800 3200 4800 3800
+Wire Wire Line
+	4800 3800 5400 3800
+Connection ~ 4800 3200
+Wire Wire Line
+	4800 3800 4800 4500
+Wire Wire Line
+	4800 4500 5950 4500
+Connection ~ 4800 3800
+Wire Wire Line
+	3950 3300 3950 3500
+Wire Wire Line
+	5600 2400 5950 2400
+Wire Wire Line
+	5600 3000 5950 3000
+Wire Wire Line
+	5600 3600 5950 3600
+Wire Wire Line
+	6250 4500 6650 4500
+Wire Wire Line
+	6250 3000 6650 3000
+Wire Wire Line
+	6250 3600 6450 3600
+Wire Wire Line
+	6450 3600 6450 3200
+Wire Wire Line
+	6450 3200 6650 3200
+Wire Wire Line
+	6250 2400 6450 2400
+Wire Wire Line
+	6450 2400 6450 2800
+Wire Wire Line
+	6450 2800 6650 2800
+$Comp
+L power:GND #PWR?
+U 1 1 62C702F4
+P 7250 3200
+F 0 "#PWR?" H 7250 2950 50  0001 C CNN
+F 1 "GND" H 7255 3027 50  0000 C CNN
+F 2 "" H 7250 3200 50  0001 C CNN
+F 3 "" H 7250 3200 50  0001 C CNN
+	1    7250 3200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 62C71A28
+P 7200 4700
+F 0 "#PWR?" H 7200 4450 50  0001 C CNN
+F 1 "GND" H 7205 4527 50  0000 C CNN
+F 2 "" H 7200 4700 50  0001 C CNN
+F 3 "" H 7200 4700 50  0001 C CNN
+	1    7200 4700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 4500 7200 4500
+Wire Wire Line
+	7200 4500 7200 4700
+Wire Wire Line
+	7050 3000 7250 3000
+Wire Wire Line
+	7250 3000 7250 3200
+$Comp
+L 0_local:LED_RCBG_THT_5mm D1
+U 1 1 62C4C7E7
+P 6850 3000
+F 0 "D1" H 6850 3500 50  0000 C CNN
+F 1 "LED_RGB_CC_5mm" H 6850 3400 50  0000 C CNN
+F 2 "0_local:LED_D5.0mm-4_RGB" H 6900 2550 50  0001 C CNN
+F 3 "~" H 6850 2950 50  0001 C CNN
+	1    6850 3000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L 0_SAO:Badgelife_sao_connector_v169bis J1
+U 1 1 62C5DFD3
+P 3100 3550
+F 0 "J1" V 2600 3500 50  0000 L CNN
+F 1 "SAO_connector_v169bis" V 2700 3100 50  0000 L CNN
+F 2 "0_SAO:Badgelife-SAOv169-SAO-2x3-back-po" H 3100 3750 50  0001 C CNN
+F 3 "" H 3100 3750 50  0001 C CNN
+	1    3100 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 3000 2900 2700
+Wire Wire Line
+	2900 2700 3950 2700
+Connection ~ 3950 2700
+$Comp
+L power:GND #PWR?
+U 1 1 62C62BCF
+P 2900 4300
+F 0 "#PWR?" H 2900 4050 50  0001 C CNN
+F 1 "GND" H 2905 4127 50  0000 C CNN
+F 2 "" H 2900 4300 50  0001 C CNN
+F 3 "" H 2900 4300 50  0001 C CNN
+	1    2900 4300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 4100 2900 4300
+NoConn ~ 3100 4100
+NoConn ~ 3300 4100
+NoConn ~ 3100 3000
+NoConn ~ 3300 3000
+$EndSCHEMATC

@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name 0_local)(type Legacy)(uri ${KIPRJMOD}/lib_sh/0_local.lib)(options "")(descr "Local Schematic Library"))
+  (lib (name 0_Raspberry_Pi)(type Legacy)(uri ${KIPRJMOD}/lib_sh/0_Raspberry_Pi.lib)(options "")(descr ""))
+  (lib (name 0_SAO)(type Legacy)(uri ${KIPRJMOD}/lib_sh/badgelife_shitty_addon_v169bis.lib)(options "")(descr ""))
+)
