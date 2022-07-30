@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[Home](/) - [Corsage](corsage-assembly.md) - [Boutonniere](Boutonniere-assembly.md)
+[Home](/) - [Corsage](corsage-assembly.md) - [Boutonniere](boutonniere-assembly.md)
 
 ![Corsage Image](images/corsage_lit.jpg)
 

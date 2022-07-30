@@ -2,9 +2,9 @@
 layout: default
 ---
 
-[Home](/) - [Corsage](corsage-assembly.md) - [Boutonniere](Boutonniere-assembly.md)
+[Home](/) - [Corsage](corsage-assembly.md) - [Boutonniere](boutonniere-assembly.md)
 
-![hom3c0ming badge](hom3c0ming_badge_lit.jpg)
+![hom3c0ming badge](images/hom3c0ming_badge_lit.jpg)
 
 # hom3c0ming badge
 
