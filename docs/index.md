@@ -37,4 +37,7 @@ Assembly Instructions for the Corsage can be found here: [Corsage](corsage-assem
 
 Assembly Instructions for the Boutonniere can be found here: [Boutonniere](boutonniere-assembly.md)
 
+Assembly walkthrough video can be found here:
+[Hom3c0ming Badge Assembly](https://www.youtube.com/watch?v=d4AU95CxsSo&ab_channel=alt_bier_hacker)
+
 More badge details to be added soon.
